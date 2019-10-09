@@ -10,7 +10,7 @@ $lang = "ru-en"
 $translatedArray = @()      # Array for translated paragraphs
 
 $ScriptDir = Split-Path $script:MyInvocation.MyCommand.Path     # Directory of our script
-$HashArguments = @{
+$HashArguments = @{                                 # Hash table for splatting
     Path = "$($ScriptDir)\module1-task3.txt"
     Encoding = "UTF8"
 }
